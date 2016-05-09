@@ -3,7 +3,7 @@
 一个简约，轻量，可定制的jQuery返回顶部插件
 
 ------
-[View Demo](http://pazha.github.io/jQuery.toTop/)
+[View Demo](http://inslow.com/jQuery.toTop/)
 
 ------
 
