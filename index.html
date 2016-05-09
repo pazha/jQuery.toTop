@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="jQuery返回顶部插件" />
+    <meta name="author" content="Pazha" />
+    <title>jQuery返回顶部插件</title>
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }body {
+            font-family: 'Open Sans', sans-serif;
+            color: #444;
+            line-height: 1.4;
+        }.wrapper {
+            width: 85%;
+            margin: 0 auto;
+            padding: 30 0;
+            overflow: hidden;
+            clear: both;
+        }header, footer {
+            background: #f2f2f2;
+            width: 100%;
+            border-bottom: 2px groove #444;
+        }footer {
+            border-bottom: 0;
+            padding: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }.header {
+            padding: 100px;
+            text-align: center;
+        }header h1 {
+            font-size: 48px;
+        }header h3 {
+            font-size: 26px;
+            font-weight: 400;
+        }.fork-pazha {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }.info {
+            padding: 30px 0 !important;
+            overflow: hidden;
+        }.feature, .credit {
+            width: 50%;
+            max-width: 50%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }.feature h3, .credit h3 {
+            text-transform: capitalize;
+            font-size: 24px;
+            display: inline-block;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+        }.feature ul {
+            list-style-type: square;
+            margin-left: 15px;
+        }.credit {
+            border-left: 1px dotted #ccc;
+        }.wrapper a, .wrapper a:hover, .wrapper a:active, .wrapper a:focus, .wrapper a:before, .wrapper a:after {
+            color: #444;
+            text-decoration: none;
+            -webkit-transition: all .3s linear;
+            -o-transition: all .3s linear;
+            transition: all .3s linear;
+            position: relative;
+        }.credit p > a {
+            font-weight: 600;
+        }.credit p > a:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            background: #444;
+            position: absolute;
+            left: 0;
+            top: 105%;
+        }.credit p > a:hover:before {
+            width: 100%;
+        }.dl-btn {
+            margin-top: 30px;
+        }.btn {
+            padding: 10px 20px;
+            background: #444;
+            border: 1px solid #444;
+            color: #f2f2f2 !important;
+            border-radius: 7px;
+            display: inline-block;
+        }.btn:hover {
+            background: #f2f2f2;
+            color: #444 !important;
+        }.dummy {
+            padding: 30px 0 !important;
+        }.dummy h2 {
+            margin-top: 30px;
+            text-align: center;
+        }@media screen and (max-width: 767px) {
+            .feature, .credit {
+                width: 100%;
+                max-width: 100%;
+                float: none;
+                padding: 15px;
+            }.credit {
+                text-align: center;
+            }}
+        
+    </style>
+    
+</head>
+<body>
+   
+   <header>
+       <div class="wrapper">
+           <div class="header">
+               <h1>返回顶部插件</h1>
+               <h3>一个简约，轻量，可定制的jQuery返回顶部插件</h3>
+           </div>
+       </div>
+   </header>
+   <div class="wrapper">
+       <div class="info">
+           <div class="feature">
+               <h3>本插件亮点特性</h3>
+               
+               <ul>
+                   <li>简约，友好</li>
+                   <li>轻量，压缩版JS代码大小不到0.5KB</li>
+                   <li>高度可定制</li>
+                   <li>您可以使用任何HTML元素和风格，兼容所有浏览器</li>
+                   <li>100%稳定无Bug</li>
+               </ul>
+           </div>
+           
+           <div class="credit">
+               <h3>更多信息</h3>
+               <p>插件名称: jQuery.toTop.js</p>
+               <p>版本: 1.0</p>
+               <p>作者: <a href="https://github.com/pazha">Pazha</a></p>
+   
+               
+               <div class="dl-btn">
+                   <a href="https://github.com/" class="btn">直接下载源码</a> 
+                   &nbsp; 或者 &nbsp; 
+                   <a href="https://github.com/" class="btn">浏览GitHub源码</a>
+               </div>
+           </div>
+       </div>
+       
+       <div class="dummy">
+           <h2>以下测试内容</h2>
+           
+           <br><hr>
+           <br>
+           <h3>念奴娇  赤壁怀古</h3>
+           <p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br>
+           <p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br><p>大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁。乱石穿空，惊涛拍岸，卷起千堆雪。江山如画，一时多少豪杰！遥想公瑾当年，小乔初嫁了，雄姿英发。羽扇纶巾，谈笑间，强虏灰飞烟灭。故国神游，多情应笑我，早生华发。人生如梦，一尊还酹江月。</p>
+           <br><hr><br>
+       </div>
+       
+   </div> 
+   <!-- wrapper -->
+   
+   <footer>
+       <h1>文章已经足够长了！</h1>
+       <br>
+       <h2>现在你可以点击右下角的返回顶部按钮试一试</h2>
+   </footer>
+   
+    <a class="fork-pazha" href="https://github.com/pazha" target="_blank">
+        <img src="img/ForkmeonGitHub.png" alt="Fork me on GitHub">
+    </a>
+    
+    
+    
+   
+   <!-- Scroll to Top button selector -->
+   
+   <a class="to-top"><img src="img/toTop(default).png" alt="top"></a>
+   <!-- 根据需求可以使用文字或者图片作为返回顶部的标识 -->
+   <!-- 这是文字<a class="to-top">Top &uarr;</a> -->
+   <!-- 这是图片<a class="to-top"><img src="img/toTop(demo).png" alt="top"></a> -->
+   
+   
+   
+   <!---- Scripts ---->
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery.toTop.min.js"></script>
+   
+   <script>
+       jQuery(function($){
+          
+
+           // 可定制选项
+           $('.to-top').toTop({
+               //以下是选项默认参数，您可以根据自己的需求修改
+               autohide: true,  //是否自动隐藏
+               offset: 420,     //距离顶部多少距离时自动隐藏按钮
+               speed: 500,      //滚动持续时间
+               position:true,   //如果设置为 false，则需要手动在 css 中设置“按钮”的位置
+               right: 15,       //右侧距离
+               bottom: 30       //底部距离
+           });
+       });
+   </script>
+    
+</body>
+</html>
