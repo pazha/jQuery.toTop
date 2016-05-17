@@ -29,6 +29,6 @@
 	   
 	       <a class="to-top"><img src="img/toTop(default).png" alt="top"></a>
 		   <!-- 根据需求可以使用文字或者图片作为返回顶部的标识 -->
-		   <!-- 这是文字<a class="to-top">Top &uarr;</a> -->
-		   <!-- 这是图片<a class="to-top"><img src="img/toTop(demo).png" alt="top"></a> -->
+		   <!-- 这是文字效果 -->  <a class="to-top">Top &uarr;</a> 
+		   <!-- 这是另一种图片效果 -->  <a class="to-top"><img src="img/toTop(demo).png" alt="top"></a> 
 ````
